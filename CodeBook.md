@@ -29,6 +29,7 @@ activity.label 18
             6   LAYING
 
 average.*** 
+            
             the average of each variable for each activity and each subject. 
             We only keep the measurements on the mean and standard deviation for each measurement.
 
