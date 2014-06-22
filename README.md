@@ -1,7 +1,8 @@
 getdataHAR
 ==========
 
-Getting and Cleaning Data Course Project: Human Activity Recognition Using Smartphones
+[Getting and Cleaning Data](https://www.coursera.org/course/getdata)
+Course Project: Human Activity Recognition Using Smartphones
 
 The purpose of this project is to demonstrate your ability to collect,
 work with, and clean a data set. The goal is to prepare tidy data that
