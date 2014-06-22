@@ -3,22 +3,33 @@ getdataHAR CodeBook
 ===================
 
 subject.id  2
+            
             the identification numbers of the volunteering subjects in the
             data set. I obtained these ids from the subject_test.txt and
             subject_train.txt.
+            
             1..30
 
 activity.label 18
+            
             Descriptive activity names in the data set.
+            
             id in raw y data   label
+            
             1   WALKING
+            
             2   WALKING_UPSTAIRS
+            
             3   WALKING_DOWNSTAIRS
+            
             4   SITTING
+            
             5   STANDING
+            
             6   LAYING
 
-average.*** the average of each variable for each activity and each subject. 
+average.*** 
+            the average of each variable for each activity and each subject. 
             We only keep the measurements on the mean and standard deviation for each measurement.
 
 Following are the original instructions about the features/measurements in the data set.
