@@ -1,7 +1,8 @@
 library(plyr)
+library(reshape)
 
 #point 4: Appropriately labels the data set with descriptive variable names.
-#I used the variable names stored in the features.txt file contined in the 
+#I used the variable names stored in the features.txt file contained in the 
 #getdata-projectfiles-UCI HAR Dataset.zip file.
 X.feature.names <- read.table("./UCI HAR Dataset/features.txt", sep=" ", 
                               col.names=c("feature.id", "feature.name"))
@@ -68,7 +69,6 @@ whole.data <- rbind(test.data, train.data)
 whole.data$subject.id <- as.factor(whole.data$subject.id)
 #point 5: Creates a second, independent tidy data set with the average of 
 #each variable for each activity and each subject. 
-library(reshape)
 melted.whole.data <- melt(whole.data, id=c("subject.id", "activity.label"))
 tidy.data <- cast(melted.whole.data, subject.id + activity.label~variable,
                        mean)
